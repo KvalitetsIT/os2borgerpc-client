@@ -5,13 +5,13 @@ with open("README.rst", "r") as fh:
 
 setup(
     # Keep this name in sync with the one in os2borgerpc_client/jobmanager.py
-    name="os2borgerpc_client",
+    name="os2borgerpc_client_test",
     version="2.5.0",
     description="Client for the OS2borgerPC system",
     long_description=long_description,
     url="https://github.com/OS2borgerPC/",
-    author="Magenta ApS",
-    author_email="info@magenta-aps.dk",
+    author="OS2",
+    author_email="info@os2.eu",
     license="GPLv3",
     packages=["os2borgerpc.client", "os2borgerpc.client.security"],
     install_requires=["PyYAML", "distro", "requests", "semver", "chardet"],
