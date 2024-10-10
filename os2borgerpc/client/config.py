@@ -1,5 +1,5 @@
 """Module for the OS2borgerPCConfig."""
-"""en ligegyldig kommentar til test af v2.5.6."""
+"""en ligegyldig kommentar til test af v2.5.8."""
 
 import os
 import os.path
