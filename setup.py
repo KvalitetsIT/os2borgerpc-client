@@ -1,17 +1,13 @@
 from setuptools import setup
-import subprocess
-import sys
-
-# Ensure the latest versions of setuptools and setuptools-scm are installed
-subprocess.check_call([sys.executable, "-m", "sudo", "pip", "install", "--upgrade", "setuptools>=61", "setuptools-scm>=8.0.0"])
 
 with open("README.rst", "r") as fh:
     long_description = fh.read()
 
 setup(
+    # Keep this name in sync with the one in os2borgerpc_client/jobmanager.py
     name="os2borgerpc_client",
-    use_scm_version=True,
-    setup_requires=['setuptools>=61', 'setuptools-scm>=8.0.0'],  # Ensure correct versions
+    use_scm_version=True,  # Automatically uses Git tags for versioning
+    setup_requires=['setuptools-scm<8.0.0'],  # Use an older version compatible with setuptools 59.6.0
     description="Client for the OS2borgerPC system",
     long_description=long_description,
     url="https://github.com/OS2borgerPC/",
