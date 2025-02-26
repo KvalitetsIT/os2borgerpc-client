@@ -3,7 +3,7 @@ import subprocess
 import sys
 
 # Ensure the latest versions of setuptools and setuptools-scm are installed
-subprocess.check_call([sys.executable, "-m", "pip", "install", "--upgrade", "setuptools>=61", "setuptools-scm>=8.0.0"])
+subprocess.check_call([sys.executable, "-m", "sudo", "pip", "install", "--upgrade", "setuptools>=61", "setuptools-scm>=8.0.0"])
 
 with open("README.rst", "r") as fh:
     long_description = fh.read()
